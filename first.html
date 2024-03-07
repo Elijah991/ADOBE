@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BEAUTIFUL STUFF</title>
+  <style>
+    #Ampaire {
+      border: 2px solid blue;
+    }
+  </style>
+</head>
+<body style="background-color: #73c2fb;">
+  <canvas id="Ampaire" width="1200" height="600"></canvas>
+  <script>
+    const canvas = document.getElementById("Ampaire");
+    const Elijah = canvas.getContext("2d");
+    
+    // Draw text.lineWidth = 2;
+    Elijah.font = "30pt bold";
+    Elijah.fillStyle = "red";
+    Elijah.fillText("GRAPHICS ANIMATOR UGANDA", canvas.width / 2 - 400, canvas.height / 40 + 15);
+    Elijah.strokeText("GRAPHICS ANIMATOR UGANDA", canvas.width / 2 - 400, canvas.height / 40 + 15);
+    //Draw car
+    Elijah.fillStyle="grey"
+    Elijah.fillRect(400,230,320,250);
+    Elijah.strokeRect(300,230,100,100);
+    //Drawing windows
+    Elijah.fillStyle="black";
+    Elijah.fillRect(600,350,80,80);
+    Elijah.strokeRect(290,330,110,140);
+
+    //Drawing windows
+    Elijah.fillStyle="black";
+    Elijah.fillRect(420,350,70,80);
+    //First trye
+    Elijah.beginPath();
+    Elijah.arc(438,490,40,0,2*Math.PI);
+    Elijah.fillStyle="blue";
+    Elijah.fill();
+    Elijah.stroke();
+  
+    //First trye
+    Elijah.beginPath();
+    Elijah.arc(680,490,40,0,2*Math.PI);
+    Elijah.fillStyle="blue";
+    Elijah.fill();
+    Elijah.stroke();
+
+    
+    
+
+
+  </script>
+</body>
+</html>
